@@ -4,7 +4,7 @@ import { GetServerSideProps } from "next";
 import { useRouter } from "next/router";
 import React, { FormEvent, useState } from "react";
 
-const create = () => {
+const Create = () => {
   const [name, setName] = useState("");
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
@@ -76,7 +76,7 @@ const create = () => {
   );
 };
 
-export default create;
+export default Create;
 
 // 로그인이 안되있다면 로그인 페이지로 리다이렉트 하는함수.
 // nextjs는 SSR임. 그래서 이 페이지도 미리 렌더링 함.
