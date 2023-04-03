@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import React, { FormEvent, useState } from "react";
 import { Post } from "@/src/types";
 
-const post = () => {
+const PostCreate = () => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
 
@@ -67,7 +67,7 @@ const post = () => {
   );
 };
 
-export default post;
+export default PostCreate;
 
 export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
   try {
